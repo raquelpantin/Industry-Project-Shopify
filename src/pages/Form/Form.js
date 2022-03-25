@@ -4,7 +4,6 @@ import PageGoal from "../PageGoal/PageGoal";
 import Page2 from "../Page2/page2";
 import Page3 from "../Page3/page3";
 
-
 import Page6 from "../Page6/Page6";
 import "./Form.scss";
 //all pages need imported here
@@ -33,7 +32,7 @@ function Form() {
         <div className="form__page-contents"></div>
 
         <div className="button-container">{PageDisplay()}</div>
-        {page === 5 ? (
+        {page === 4 ? (
           <button className="marketing">View More Marketing Apps</button>
         ) : (
           <>

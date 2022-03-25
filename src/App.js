@@ -6,7 +6,6 @@ import Form from "./pages/Form/Form";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Form /> */}
       <Switch>
         <Route path="/" exact component={WelcomePage} />
         <Route path="/marketing" component={Form} />
