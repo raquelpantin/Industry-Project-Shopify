@@ -1,7 +1,7 @@
 import React from 'react';
 import './WelcomePage.scss';
 import {Link} from 'react-router-dom';
-import shopier from '../../assets/Images/Shopyv4.png';
+import shopier from '../../assets/Icons/page2icon.svg';
 import shopify from '../../assets/Icons/shopify.svg';
 
 export default function WelcomePage() {
@@ -19,7 +19,7 @@ export default function WelcomePage() {
           </div>
           <footer>
             <p>Powered by Shopify</p>
-            <img src={shopify} />
+            <img src={shopify} className="icon"/>
           </footer>
         </div>
     </main>
