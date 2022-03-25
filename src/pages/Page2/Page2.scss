@@ -1,0 +1,82 @@
+@use '/src/partials/colors' as *;
+
+
+section {
+    gap:2rem;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    margin-top: 10% ;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+    padding: 5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+h1{
+    color: $secondery-header-color;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-left: 1rem ;
+}
+.subtitle{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-box{
+    width: 33%;
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.image{
+    height: 75px;
+    width: 50%;
+    
+}
+
+.active{
+    border: 2px solid $button-green;
+    border-radius: 5px;
+}
+p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    right:2rem;
+    gap:1rem;
+    top: 2rem;
+}
+
+.icon{
+    width: 31px;
+    height: 35px;
+}
+
+.reverseIcon{
+    position: absolute;
+    top: 0;
+    left: 3rem;
+}

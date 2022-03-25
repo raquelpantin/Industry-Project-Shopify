@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import Page1 from "../Page1/Page1";
-import Page2 from "../page2";
+import Page2 from "../Page2/page2";
 import Page3 from "../page3";
 import Page4 from "../page4";
 import Page5 from "../page5";
