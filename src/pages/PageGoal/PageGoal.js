@@ -57,7 +57,7 @@ const PageGoal = () => {
             </form>
             <div className="spacer"></div>
             <div className="shopycontainer">
-              <img className="shopy" src={shopy} />
+              <img className="shopy1" src={shopy} />
             </div>
           </div>
         </div>
