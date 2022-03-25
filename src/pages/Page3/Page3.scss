@@ -1,0 +1,77 @@
+@use '/src/partials/colors' as *;
+
+section {
+    gap:2rem;
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    margin-top: 10% ;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+    padding: 5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+h1{
+    color: $secondery-header-color;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-left: 1rem ;
+}
+
+.subtitle{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-box{
+    width: 20%;
+    height: 4rem;
+    background-color: $button-green;
+    color: white;
+    border: 1px solid transparant;
+    border-radius: 5px;
+    &-text{
+        position: relative;
+        top:10px;
+    }
+}
+
+.slider{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.note{
+    position: absolute;
+    top:26rem;
+    left: 4rem;
+    width:20%;
+    text-align: left;
+    color: grey;
+}
+
+.shopy{
+    position: absolute;
+    bottom: 0px;
+    right: 28rem;
+}
+
+.active1{
+    background-color: darkslategray;
+}
