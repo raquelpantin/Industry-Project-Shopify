@@ -45,7 +45,7 @@ render(){
               <p>TRADITIONAL</p>
           </div>
           <div className="image-box">
-              <img src={img2} className={`image ${isActive ? 'active' : ''} `} onClick={this.handleToggle}></img>
+              <img src={img2} className={`image ${isActive ? 'active5' : ''} `} onClick={this.handleToggle}></img>
               <p>NFT</p>
           </div>
           <div className="image-box">
@@ -53,7 +53,7 @@ render(){
               <p>CUSTOM</p>
           </div>
           <div className="image-box">
-              <img src={img4} className={`image ${isActive2 ? 'active' : ''} `} onClick={this.handleToggle2}></img>
+              <img src={img4} className={`image ${isActive2 ? 'active5' : ''} `} onClick={this.handleToggle2}></img>
               <p>DIGITAL PRINITS</p>
           </div>
           <div className="image-box">
@@ -73,7 +73,7 @@ render(){
               <p>LIMITED PRINTS</p>
           </div>
           <div className="image-box">
-              <img src={img9} className={`image ${isActive3 ? 'active' : ''} `} onClick={this.handleToggle3}></img>
+              <img src={img9} className={`image ${isActive3 ? 'active5' : ''} `} onClick={this.handleToggle3}></img>
               <p>3D ART</p>
           </div>
       </article>
