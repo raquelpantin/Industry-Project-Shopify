@@ -5,7 +5,7 @@ import Page2 from "../page2";
 import Page3 from "../page3";
 import Page4 from "../page4";
 
-import Page6 from "../page6";
+import Page6 from "../Page6/Page6";
 import "./Form.scss";
 //all pages need imported here
 
@@ -41,6 +41,7 @@ function Form() {
           <>
             <button
               className="back"
+              disabled={page == 0}
               onClick={() => {
                 setPage((currentPage) => currentPage - 1);
               }}

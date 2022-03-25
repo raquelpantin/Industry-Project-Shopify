@@ -6,9 +6,11 @@ import Form from "./pages/Form/Form";
 function App() {
   return (
     <BrowserRouter>
-      <Form />
-      {/* <Route path="/" component={WelcomePage} />
-    <Route path="/marketing" component={Form} /> */}
+      {/* <Form /> */}
+      <Switch>
+        <Route path="/" exact component={WelcomePage} />
+        <Route path="/marketing" component={Form} />
+      </Switch>
     </BrowserRouter>
   );
 }
