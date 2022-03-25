@@ -1,0 +1,40 @@
+@use "../../App.scss" as *;
+@use "../../partials/_colors.scss" as *;
+@use "../../partials/_fonts.scss" as *;
+@use "../../partials/_variables.scss" as *;
+@use "../../partials/_mixins.scss" as *;
+@use "../../partials/_function.scss" as *;
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  position: absolute;
+  bottom: 1rem;
+  right: 16rem;
+  color: #2c6ecb;
+  border: none;
+  background-color: transparent;
+  @include font;
+  font-size: 18px;
+  font-weight: 300;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.proceed {
+  @include font;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  bottom: 1rem;
+  right: 8rem;
+  width: 7rem;
+  cursor: pointer;
+}
