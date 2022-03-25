@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "SFFamilyDisplay";
+  src: url("../assets/fonts/SFPRODISPLAYREGULAR.OTF");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SFFamilyDisplay";
+  src: url("../assets/fonts/SFPRODISPLAYREGULAR.OTF");
+  font-weight: 600;
+}
+
+$font-stack: "SFFamilyDisplay";
+
+//test//
+@mixin font {
+  /* Load system fonts */
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
+    Roboto, Helvetica Neue, sans-serif;
+
+  /* Make type rendering look crisper */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Deactivate auto-enlargement of small text in Safari */
+  text-size-adjust: 100%;
+
+  /* Enable kerning and optional ligatures */
+  text-rendering: optimizeLegibility;
+}

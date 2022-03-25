@@ -1,0 +1,92 @@
+@use '../../partials/colors' as *;
+
+main {
+    display: flex;
+    align-content: center;
+    gap:2rem;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    margin-top: 15% ;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+    padding: 5rem;
+}
+
+.left{
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.mascot{
+   width: 100%
+}
+
+.title{
+    color: $primary-header-color;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 44px;
+}
+
+.sub-title{
+    color: $secondery-text-color;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+button{
+    width:129px;
+    height: 46px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}   
+
+.buttons{
+    margin-left: 3rem;
+}
+
+.btn-get{
+    background-color: $button-green;
+    color: white;
+    margin-right: 2rem;
+    :hover{
+        cursor: pointer;
+    }
+
+}
+
+.btn{
+    :hover{
+        cursor: pointer;
+    }
+}
+.btn-learn{
+    background-color: white;
+    :hover{
+        cursor: pointer;
+    }
+}
+
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    right:2rem;
+    gap:1rem;
+}
+
+p{
+    position: relative;
+    top: 5px;
+}
+
+.icon{
+    width: 31px;
+    height: 35px;
+}

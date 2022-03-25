@@ -1,12 +1,14 @@
 import "./App.scss";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import WelcomePage from "./pages/WelcomePage/WelcomePage";
+import Form from "./pages/Form/Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello World</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Route path="/" exact component={WelcomePage} />
+      <Route path="/marketing" component={Form} />
+    </BrowserRouter>
   );
 }
 
