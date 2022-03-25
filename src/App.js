@@ -1,14 +1,15 @@
 import "./App.scss";
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import WelcomePage from './pages/WelcomePage/WelcomePage';
-import Form from './pages/Form/Form';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import WelcomePage from "./pages/WelcomePage/WelcomePage";
+import Form from "./pages/Form/Form";
 
 function App() {
   return (
-   <BrowserRouter>
-    <Route path="/" component={WelcomePage} />
-    <Route path="/marketing" component={Form} />
-   </BrowserRouter>
+    <BrowserRouter>
+      <Form />
+      {/* <Route path="/" component={WelcomePage} />
+    <Route path="/marketing" component={Form} /> */}
+    </BrowserRouter>
   );
 }
 
