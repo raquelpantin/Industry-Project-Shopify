@@ -1,10 +1,10 @@
 import react, { useState } from "react";
 import Page1 from "../Page1/Page1";
+import PageGoal from "../PageGoal/PageGoal";
 import Page2 from "../Page2/page2";
 import Page3 from "../Page3/page3";
-import Page4 from "../page4";
-import Page5 from "../page5";
-import Page6 from "../page6";
+
+import Page6 from "../Page6/Page6";
 import "./Form.scss";
 //all pages need imported here
 
@@ -13,15 +13,13 @@ function Form() {
 
   const PageDisplay = () => {
     if (page === 0) {
-      return <Page1 />;
-    } else if (page === 1) {
       return <Page2 />;
+    } else if (page === 1) {
+      return <Page1 />;
     } else if (page === 2) {
       return <Page3 />;
     } else if (page === 3) {
-      return <Page4 />;
-    } else if (page === 4) {
-      return <Page5 />;
+      return <PageGoal />;
     } else {
       return <Page6 />;
     }
@@ -34,12 +32,13 @@ function Form() {
         <div className="form__page-contents"></div>
 
         <div className="button-container">{PageDisplay()}</div>
-        {page === 5 ? (
+        {page === 4 ? (
           <button className="marketing">View More Marketing Apps</button>
         ) : (
           <>
             <button
               className="back"
+              disabled={page == 0}
               onClick={() => {
                 setPage((currentPage) => currentPage - 1);
               }}
