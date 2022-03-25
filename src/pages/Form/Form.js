@@ -5,6 +5,7 @@ import Page3 from "../page3";
 import Page4 from "../page4";
 import Page5 from "../page5";
 import Page6 from "../page6";
+import "./Form.scss";
 //all pages need imported here
 
 function Form() {
@@ -32,12 +33,13 @@ function Form() {
       <div className="form__container">
         <div className="form__page-contents"></div>
 
-        <div>{PageDisplay()}</div>
+        <div className="button-container">{PageDisplay()}</div>
         {page === 5 ? (
-          <button>View More Marketing Apps</button>
+          <button className="marketing">View More Marketing Apps</button>
         ) : (
           <>
             <button
+              className="back"
               onClick={() => {
                 setPage((currentPage) => currentPage - 1);
               }}
@@ -45,6 +47,7 @@ function Form() {
               Back
             </button>
             <button
+              className="proceed"
               disabled={page == 5}
               onClick={() => {
                 setPage((currentPage) => currentPage + 1);
