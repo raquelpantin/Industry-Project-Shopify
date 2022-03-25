@@ -1,5 +1,6 @@
 import react, { useState } from "react";
 import Page1 from "../Page1/Page1";
+import PageGoal from "../PageGoal/PageGoal";
 import Page2 from "../page2";
 import Page3 from "../page3";
 import Page4 from "../page4";
@@ -21,7 +22,7 @@ function Form() {
     } else if (page === 3) {
       return <Page4 />;
     } else if (page === 4) {
-      return <Page5 />;
+      return <PageGoal />;
     } else {
       return <Page6 />;
     }
