@@ -4,7 +4,7 @@ import PageGoal from "../PageGoal/PageGoal";
 import Page2 from "../page2";
 import Page3 from "../page3";
 import Page4 from "../page4";
-import Page5 from "../page5";
+
 import Page6 from "../page6";
 import "./Form.scss";
 //all pages need imported here
