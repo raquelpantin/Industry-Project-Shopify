@@ -1,0 +1,49 @@
+@use '/src/partials/colors' as *;
+
+section {
+    gap:2rem;
+    max-width: 1000px;
+    height: 35vh;
+    margin: auto;
+    position: relative;
+    margin-top: 15% ;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+    padding: 5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+h1{
+    color: $secondery-header-color;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-left: 1rem ;
+}
+
+select{
+    width: 500px;
+    margin: auto;
+    height: 2rem;
+    background-color: white;
+}
+
+select option{
+    background-color: white;
+}
+
+.shopy{
+    position: absolute;
+    bottom: -.5rem;
+    left: 2rem;
+}
